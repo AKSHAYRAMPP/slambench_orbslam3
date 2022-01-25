@@ -1,4 +1,92 @@
-# slambench_orbslam3
+# SLAMBench - ORB_SLAM3
+Paper
+
+Robust SLAM Systems: Are We There Yet?
+
+[https://robustslam.github.io/evaluation](https://robustslam.github.io/evaluation)
+
+Original repo : [https://github.com/pamela-project/slambench](https://github.com/pamela-project/slambench)
+
+## What is SLAMBench?
+
+SLAMBench is a SLAM performance benchmark that combines a framework for quantifying quality-of-result with instrumentation of accuracy, execution time, memory usage and energy consumption. It also include a graphical interface to visualize these information.
+
+SLAMBench offers a platform for a broad spectrum of future research in jointly exploring the design space of algorithmic and implementation-level optimisations. It targets desktop, laptop, mobile and embedded platforms. Some of the benchmarks (in particular KFusion) were tested on Ubuntu, OS X and Android (more information about android here [https://github.com/bbodin/slambench-android](https://github.com/bbodin/slambench-android)).
+
+SLAMBench currently supports the following algorithms:
+
+   ORB-SLAM3 [Campos et al, ARXIV'20]: C++ as distributed by [https://github.com/UZ-SLAMLab](https://github.com/UZ-SLAMLab)
+   
+   ReFusion [Palazollo et al. IROS'19]: CUDA as distributed by [https://github.com/PRBonn](https://github.com/PRBonn)
+    
+   OpenVINS [Geneva et al. IROS'19]: C++ as distributed by [https://github.com/rpng/](https://github.com/rpng/)
+    
+   Supereight [Vespa et al. RA-L'18]: C++, OpenMP as distributed by [https://github.com/rpng/](https://github.com/emanuelev)
+    
+   BundleFusion [Dai et al. ACM TOG'17]: CUDA as distributed by [https://github.com/niessner](https://github.com/niessner)
+    
+   SemanticFusion [McCormac et al. ICRA'17]: CUDA as distributed by [https://github.com/seaun163](https://github.com/seaun163)
+    
+   ORB-SLAM2 [Mur-Artal et al, TOR'15 and TOR'17]: C++ as distributed by [https://github.com/raulmur](https://github.com/raulmur)
+    
+   DSO [Engel et al. Arxiv'16]: C++ as distributed by [https://github.com/JakobEngel](https://github.com/JakobEngel)
+    
+   ElasticFusion [Whelan et al, IJRR'16]: CUDA as distributed by [https://github.com/mp3guy](https://github.com/mp3guy)
+    
+   InfiniTAMv2 [Kahler et al, ISMAR'15]: C++, OpenMP and CUDA versions as distributed by [https://github.com/victorprad/](https://github.com/victorprad/)
+    
+   KinectFusion [Newcombe et al. ISMAR'11]: C++, OpenMP, OpenCL and CUDA inspired by [https://github.com/GerhardR](https://github.com/GerhardR)
+    
+   LSDSLAM [Engel et al, ECCV'14]: C++, and threaded as distributed by [https://github.com/tum-vision/](https://github.com/tum-vision/) and modified by [https://github.com/mp3guy](https://github.com/mp3guy)
+    
+   MonoSLAM [Davison et al, TPAMI'07]: Original version as distributed by [https://github.com/hanmekim/](https://github.com/hanmekim/)
+    
+   OKVIS [Leutenegger et al, IJRR'15]: Original version as distributed by [https://github.com/ethz-asl](https://github.com/ethz-asl)
+    
+   PTAM [Klein et al, ISMAR'07 and ECCV'08]: Original version as distributed by [https://github.com/Oxford-PTAM/](https://github.com/Oxford-PTAM/)
+    
+   SVO [Forster et al, ICRA'14]: Original version as distributed by [https://github.com/uzh-rpg/rpg_svo/](https://github.com/uzh-rpg/rpg_svo/) (a more recent version available at [http://rpg.ifi.uzh.ch/svo2.html](http://rpg.ifi.uzh.ch/svo2.html))
+
+IMPORTANT: If you use any of those algorithms in scientific publications, you should refer to the respective publications.
+
+
+## How to set up SLAMBench?
+
+As SLAMBench deals with multiple SLAM algorithms, dependencies might be difficult to install on any systems. To ease the usage of SLAMBench we provide auto-installation of dependencies and recommend the use fresh installation of Ubuntu 18/20 or Fedora 24-29.
+Dependency installation
+Required by SLAMBench framework
+
+    CMake 2.8.11 or higher is required.
+    Make
+    GCC C/C++
+    Boost (Optional)
+    GLUT (Optional)
+
+Required by benchmarks and datasets
+
+    Git
+    Mercurial
+    wget
+    unzip
+    lapack
+    blas
+    findutils
+    cvs
+    glog
+    gflags
+    p7zip
+
+To install them
+
+With Ubuntu 20.04: `apt-get -y install libvtk6.3 libvtk6-dev unzip libflann-dev wget mercurial git gcc g++ cmake python-numpy freeglut3 freeglut3-dev libglew-dev libglu1-mesa libglu1-mesa-dev libgl1-mesa-glx libgl1-mesa-dev libxmu-dev libxi-dev libboost-all-dev cvs libgoogle-glog-dev libatlas-base-dev gfortran gtk2.0 libgtk2.0-dev libyaml-dev build-essential libyaml-cpp-dev`
+
+## Special requirements for CUDA
+
+To run the CUDA implementation of some of the algorithms, you will need extra dependencies.
+
+With Ubuntu: `apt-get -y install nvidia-cuda-toolkit clinfo`
+
+## Setting up slambench_orbslam3
 
 `git clone https://github.com/pamela-project/slambench`
 
