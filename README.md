@@ -173,6 +173,8 @@ using EuRoC MAV [Burri et al, IJRR'16]: Micro Aerial Vehicle dataset
 
 # Runing benchmark
 
+mode:Monocular
+
 `./build/bin/slambench -i datasets/EuRoCMAV/machine_hall/MH_01_easy/MH_01_easy.slam -load ./build/lib/libORB_SLAM3-original-library.so -m mono`
 
 # Errors
