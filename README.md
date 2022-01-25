@@ -88,7 +88,8 @@ With Ubuntu: `apt-get -y install nvidia-cuda-toolkit clinfo`
 
 ## Setting up slambench
 
-Alog: ORB_SLAM3
+Algo: ORB_SLAM3
+
 Dataset: EuRoC MAV [Burri et al, IJRR'16]: Micro Aerial Vehicle dataset (machine_hall/MH_01_easy)
 
 `git clone https://github.com/pamela-project/slambench`
