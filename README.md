@@ -49,6 +49,18 @@ SLAMBench currently supports the following algorithms:
 
 IMPORTANT: If you use any of those algorithms in scientific publications, you should refer to the respective publications.
 
+SLAMBench currently supports the following datasets:
+
+    OpenLORIS [Shi et al, ICRA'20]: Lifelong SLAM dataset
+    Bonn Dynamic [Palazollo et al. IROS'19]: Dynamic scene dataset
+    UZH-FPV [Delmerico et al. ICRA'19]: Drone racing dataset
+    ETH Illumination [Park et al, ICRA'17]: Illumination changes dataset
+    VolumeDeform [Innmann et al, ECCV'16]: Non-rigid reconstruction
+    EuRoC MAV [Burri et al, IJRR'16]: Micro Aerial Vehicle dataset
+    ICL-NUIM [Handa et al, ICRA'14]: Synthetic dataset
+    TUM RGB-D [Sturm et al, IROS'12]: 
+    
+   A standard SLAM benchmark A complete list of the datasets available is provided by the command `make datasets`.
 
 ## How to set up SLAMBench?
 
