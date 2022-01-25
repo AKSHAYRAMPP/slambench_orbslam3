@@ -58,9 +58,9 @@ SLAMBench currently supports the following datasets:
     VolumeDeform [Innmann et al, ECCV'16]: Non-rigid reconstruction
     EuRoC MAV [Burri et al, IJRR'16]: Micro Aerial Vehicle dataset
     ICL-NUIM [Handa et al, ICRA'14]: Synthetic dataset
-    TUM RGB-D [Sturm et al, IROS'12]: 
+    TUM RGB-D [Sturm et al, IROS'12]: A standard SLAM benchmark
     
-   A standard SLAM benchmark A complete list of the datasets available is provided by the command `make datasets`.
+   A complete list of the datasets available is provided by the command `make datasets`.
 
 ## How to set up SLAMBench?
 
